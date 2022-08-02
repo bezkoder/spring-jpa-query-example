@@ -102,15 +102,20 @@ public class SpringBootQueryExampleApplication implements CommandLineRunner {
     int size = 3;
 
     Pageable pageable = PageRequest.of(page, size);
-
     tutorials = tutorialRepository.findAllWithPagination(pageable).getContent();
     show(tutorials);
 
     pageable = PageRequest.of(page, size, Sort.by("level").descending());
-
     tutorials = tutorialRepository.findAllWithPagination(pageable).getContent();
     show(tutorials);
 
+    pageable = PageRequest.of(page, size);   
+    tutorials = tutorialRepository.findByTitleWithPagination("ring", pageable).getContent();
+    show(tutorials);
+    
+    pageable = PageRequest.of(page, size, Sort.by("level").descending());
+    tutorials = tutorialRepository.findByPublishedWithPagination(false, pageable).getContent();
+    show(tutorials);
   }
 
   private void show(List<Tutorial> tutorials) {

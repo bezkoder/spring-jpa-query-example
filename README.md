@@ -65,6 +65,12 @@ Fullstack:
 
 > [Angular 13 + Spring Boot + PostgreSQL example](https://www.bezkoder.com/spring-boot-angular-13-postgresql/)
 
+> [Angular 14 + Spring Boot + H2 Embedded Database example](https://www.bezkoder.com/spring-boot-angular-14-crud/)
+
+> [Angular 14 + Spring Boot + MySQL example](https://www.bezkoder.com/spring-boot-angular-14-mysql/)
+
+> [Angular 14 + Spring Boot + PostgreSQL example](https://www.bezkoder.com/spring-boot-angular-14-postgresql/)
+
 > [React Redux + Spring Boot example](https://www.bezkoder.com/spring-boot-react-redux-example/)
 
 > [React + Spring Boot + MySQL example](https://www.bezkoder.com/react-spring-boot-crud/)

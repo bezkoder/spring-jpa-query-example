@@ -62,7 +62,13 @@ public interface TutorialRepository extends JpaRepository<Tutorial, Long> {
   @Query("SELECT t FROM Tutorial t WHERE t.published=?1")
   List<Tutorial> findByPublishedAndSort(boolean isPublished, Sort sort);
   
+  // Pagination and Sorting with Pageable
   @Query("SELECT t FROM Tutorial t")
   Page<Tutorial> findAllWithPagination(Pageable pageable);
 
+  @Query("SELECT t FROM Tutorial t WHERE t.published=?1")
+  Page<Tutorial> findByPublishedWithPagination(boolean isPublished, Pageable pageable);
+  
+  @Query("SELECT t FROM Tutorial t WHERE LOWER(t.title) LIKE LOWER(CONCAT('%', ?1,'%'))")
+  Page<Tutorial> findByTitleWithPagination(String title, Pageable pageable);
 }
