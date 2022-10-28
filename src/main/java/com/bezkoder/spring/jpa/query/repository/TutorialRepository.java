@@ -47,6 +47,12 @@ public interface TutorialRepository extends JpaRepository<Tutorial, Long> {
   @Query("SELECT t FROM Tutorial t WHERE t.createdAt BETWEEN ?1 AND ?2")
   List<Tutorial> findByDateBetween(Date start, Date end);
   
+  @Query("SELECT t FROM Tutorial t WHERE LOWER(t.title) LIKE LOWER(CONCAT('%', :keyword,'%')) OR LOWER(t.description) LIKE LOWER(CONCAT('%', :keyword,'%'))")
+  List<Tutorial> findByTitleContainingOrDescriptionContainingCaseInsensitive(String keyword);
+  
+  @Query("SELECT t FROM Tutorial t WHERE LOWER(t.title) LIKE LOWER(CONCAT('%', :title,'%')) AND t.published=:isPublished")
+  List<Tutorial> findByTitleContainingCaseInsensitiveAndPublished(String title, boolean isPublished);
+  
   @Query("SELECT t FROM Tutorial t ORDER BY t.level DESC")
   List<Tutorial> findAllOrderByLevelDesc();
   

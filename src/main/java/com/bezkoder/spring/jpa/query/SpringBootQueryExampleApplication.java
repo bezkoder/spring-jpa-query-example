@@ -34,13 +34,13 @@ public class SpringBootQueryExampleApplication implements CommandLineRunner {
     Date date2 = new SimpleDateFormat("yyyy-MM-dd").parse("2022-04-26");
     Date date3 = new SimpleDateFormat("yyyy-MM-dd").parse("2022-05-19");
 
-    tutorialRepository.save(new Tutorial("Spring Data", "Tut#1 Description", 3, false, date1));
-    tutorialRepository.save(new Tutorial("Java Spring", "Tut#2 Description", 1, false, date1));
-    tutorialRepository.save(new Tutorial("Hibernate", "Tut#3 Description", 3, false, date2));
-    tutorialRepository.save(new Tutorial("Spring Boot", "Tut#4 Description", 2, false, date2));
-    tutorialRepository.save(new Tutorial("Spring Data JPA", "Tut#5 Description", 3, false, date3));
-    tutorialRepository.save(new Tutorial("Spring Batch", "Tut#6 Description", 4, false, date3));
-    tutorialRepository.save(new Tutorial("Spring Security", "Tut#7 Description", 5, false, date3));
+    tutorialRepository.save(new Tutorial("Spring Data", "Spring Data Description", 3, true, date1));
+    tutorialRepository.save(new Tutorial("Java Spring Boot", "Spring Framework Description", 1, false, date1));
+    tutorialRepository.save(new Tutorial("Hibernate", "Hibernate ORM Description", 3, true, date2));
+    tutorialRepository.save(new Tutorial("Spring Boot", "Spring Boot Description", 2, false, date2));
+    tutorialRepository.save(new Tutorial("Spring JPA", "Spring Data JPA Description", 3, true, date3));
+    tutorialRepository.save(new Tutorial("Spring Batch", "Spring Batch Description", 4, true, date3));
+    tutorialRepository.save(new Tutorial("Spring Security", "Spring Security Description", 5, false, date3));
 
     List<Tutorial> tutorials = new ArrayList<>();
 
@@ -78,6 +78,12 @@ public class SpringBootQueryExampleApplication implements CommandLineRunner {
     Date myDate2 = new SimpleDateFormat("yyyy-MM-dd").parse("2022-05-11");
 
     tutorials = tutorialRepository.findByDateBetween(myDate1, myDate2);
+    show(tutorials);
+    
+    tutorials = tutorialRepository.findByTitleContainingOrDescriptionContainingCaseInsensitive("data");
+    show(tutorials);
+    
+    tutorials = tutorialRepository.findByTitleContainingCaseInsensitiveAndPublished("spring", true);
     show(tutorials);
     
     tutorials = tutorialRepository.findAllOrderByLevelDesc();
