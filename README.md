@@ -11,15 +11,30 @@ For more detail, please visit:
 More Practice:
 > [Spring JPA Native Query example in Spring Boot](https://www.bezkoder.com/jpa-native-query/)
 
+> [Spring JPA Derived example in Spring Boot](https://www.bezkoder.com/jpa-repository-query/)
+
+> [Spring Boot Validate Request Body](https://www.bezkoder.com/spring-boot-validate-request-body/)
+
 > [Spring Boot File upload example with Multipart File](https://www.bezkoder.com/spring-boot-file-upload/)
 
 > [Spring Boot Pagination & Filter example | Spring JPA, Pageable](https://www.bezkoder.com/spring-boot-pagination-filter-jpa-pageable/)
 
 > [Spring Data JPA Sort/Order by multiple Columns | Spring Boot](https://www.bezkoder.com/spring-data-sort-multiple-columns/)
 
+Unit Test:
 > [Spring Boot Repository Unit Test with @DataJpaTest](https://www.bezkoder.com/spring-boot-unit-test-jpa-repo-datajpatest/)
 
+> [Spring Boot Rest Controller Unit Test with @WebMvcTest](https://www.bezkoder.com/spring-boot-webmvctest/)
+
+> Cache the result: [Spring Boot Redis Cache example](https://www.bezkoder.com/spring-boot-redis-cache-example/)
+
+> Documentation: [Spring Boot with Swagger 3 example](https://www.bezkoder.com/spring-boot-swagger-3/)
+
+> Reactive Rest API: [Spring Boot WebFlux example](https://www.bezkoder.com/spring-boot-webflux-rest-api/)
+
 Associations:
+> [Spring Boot One To One example with Spring JPA, Hibernate](https://www.bezkoder.com/jpa-one-to-one/)
+
 > [Spring Boot One To Many example with Spring JPA, Hibernate](https://www.bezkoder.com/jpa-one-to-many/)
 
 > [Spring Boot Many To Many example with Spring JPA, Hibernate](https://www.bezkoder.com/jpa-many-to-many/)
@@ -39,37 +54,41 @@ Fullstack:
 
 > [Vue + Spring Boot + PostgreSQL example](https://www.bezkoder.com/spring-boot-vue-js-postgresql/)
 
-> [Angular 8 + Spring Boot + Embedded database example](https://www.bezkoder.com/angular-spring-boot-crud/)
-
-> [Angular 8 + Spring Boot + MySQL example](https://www.bezkoder.com/angular-spring-boot-crud/)
-
-> [Angular 8 + Spring Boot + PostgreSQL example](https://www.bezkoder.com/angular-spring-boot-postgresql/)
-
 > [Angular 10 + Spring Boot + MySQL example](https://www.bezkoder.com/angular-10-spring-boot-crud/)
-
-> [Angular 10 + Spring Boot + PostgreSQL example](https://www.bezkoder.com/angular-10-spring-boot-postgresql/)
 
 > [Angular 11 + Spring Boot + MySQL example](https://www.bezkoder.com/angular-11-spring-boot-crud/)
 
-> [Angular 11 + Spring Boot + PostgreSQL example](https://www.bezkoder.com/angular-11-spring-boot-postgresql/)
-
-> [Angular 12 + Spring Boot + Embedded database example](https://www.bezkoder.com/angular-12-spring-boot-crud/)
-
-> [Angular 12 + Spring Boot + MySQL example](https://www.bezkoder.com/angular-12-spring-boot-mysql/)
-
-> [Angular 12 + Spring Boot + PostgreSQL example](https://www.bezkoder.com/angular-12-spring-boot-postgresql/)
-
-> [Angular 13 + Spring Boot + H2 Embedded Database example](https://www.bezkoder.com/spring-boot-angular-13-crud/)
+> [Angular 12 + Spring Boot + MySQL example](https://bezkoder.com/angular-12-spring-boot-mysql/)
 
 > [Angular 13 + Spring Boot + MySQL example](https://www.bezkoder.com/spring-boot-angular-13-mysql/)
 
+> [Angular 14 + Spring Boot + MySQL example](https://www.bezkoder.com/spring-boot-angular-14-mysql/)
+
+> [Angular 15 + Spring Boot + MySQL example](https://www.bezkoder.com/spring-boot-angular-15-mysql/)
+
+> [Angular 16 + Spring Boot + MySQL example](https://www.bezkoder.com/spring-boot-angular-16-mysql/)
+
+> [Angular 10 + Spring Boot + PostgreSQL example](https://www.bezkoder.com/angular-10-spring-boot-postgresql/)
+
+> [Angular 11 + Spring Boot + PostgreSQL example](https://www.bezkoder.com/angular-11-spring-boot-postgresql/)
+
+> [Angular 12 + Spring Boot + PostgreSQL example](https://bezkoder.com/angular-12-spring-boot-postgresql/)
+
 > [Angular 13 + Spring Boot + PostgreSQL example](https://www.bezkoder.com/spring-boot-angular-13-postgresql/)
+
+> [Angular 14 + Spring Boot + PostgreSQL example](https://www.bezkoder.com/spring-boot-angular-14-postgresql/)
+
+> [Angular 15 + Spring Boot + PostgreSQL example](https://www.bezkoder.com/spring-boot-angular-15-postgresql/)
+
+> [Angular 16 + Spring Boot + PostgreSQL example](https://www.bezkoder.com/spring-boot-angular-16-postgresql/)
+
+> [Angular 13 + Spring Boot + H2 Embedded Database example](https://www.bezkoder.com/spring-boot-angular-13-crud/)
 
 > [Angular 14 + Spring Boot + H2 Embedded Database example](https://www.bezkoder.com/spring-boot-angular-14-crud/)
 
-> [Angular 14 + Spring Boot + MySQL example](https://www.bezkoder.com/spring-boot-angular-14-mysql/)
+> [Angular 15 + Spring Boot + H2 Embedded Database example](https://www.bezkoder.com/spring-boot-angular-15-crud/)
 
-> [Angular 14 + Spring Boot + PostgreSQL example](https://www.bezkoder.com/spring-boot-angular-14-postgresql/)
+> [Angular 16 + Spring Boot + H2 Embedded Database example](https://www.bezkoder.com/spring-boot-angular-16-crud/)
 
 > [React Redux + Spring Boot example](https://www.bezkoder.com/spring-boot-react-redux-example/)
 
@@ -88,4 +107,3 @@ Run both Back-end & Front-end in one place:
 ```
 mvn spring-boot:run
 ```
-

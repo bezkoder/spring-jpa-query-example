@@ -3,7 +3,7 @@ package com.bezkoder.spring.jpa.query.repository;
 import java.util.Date;
 import java.util.List;
 
-import javax.transaction.Transactional;
+import jakarta.transaction.Transactional;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
